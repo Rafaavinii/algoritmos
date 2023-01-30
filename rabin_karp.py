@@ -20,9 +20,6 @@ def Rabin_Karp(T, n, P, m):
 
     while h1 != h2 and i < n-m:
 
-        #if h1 == h2:
-        #   indices.append(i)
-
         h2 = (h2+d*q - (ord(T[i])*dM))%q
         h2 = (h2*d + ord(T[i+m]))%q
         i = i + 1
